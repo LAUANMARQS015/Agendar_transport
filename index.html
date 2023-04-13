@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Transporte</title>
+    <link rel="stylesheet" href="index.css">
+                                                                        </head>
+    
+                                                                       
+    <body>
+        <h1>Agenda De Transporte</h1>
+        <div class="container">
+            <form>
+            <section>
+            <h2>Adicionar Transporte</h2>
+            <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+        <label for="veiculo">Veículo:</label>
+        <select id="veiculo" name="veiculo" required>
+          <option value="" disabled selected>Selecione um veículo</option>
+          <option value="carro">Carro</option>
+          <option value="moto">Moto</option>
+          <option value="van">Van</option> 
+          <option value="van">Micro-ônibus</option>  
+          <option value="van">Ônibus</option>          
+                                                                        </select>
+         <label for="origem">Origem:</label>
+        <input type="text" id="origem" name="origem" required>
+        <label for="destino">Destino:</label>
+        <input type="text" id="destino" name="destino" required>
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" name="observacoes"></textarea>
+        <button type="submit">Adicionar</button>                                                                
+                                                                    </form>
+        <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Veículo</th>
+            <th>Origem</th>
+            <th>Destino</th>
+            <th>Observações</th>
+            <th>Ações</th>          
+                                                                     </tr>   
+                                                                    </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <button>Editar</button>
+              <button>Excluir</button>                                                           
+            </td>
+                                                                     </tr>
+                                                                     </tbody>
+                                                                     </table>
+                                                                     </div>               
+        <script src="https://unpkg.com/pikaday/pikaday.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>                                                             
